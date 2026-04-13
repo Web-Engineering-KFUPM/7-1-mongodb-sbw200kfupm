@@ -185,11 +185,28 @@
  */
 
 // import mongoose
+import mongoose from "mongoose";
+import "dotenv/config";
+
+const mongoUri = process.env.MONGODB_URI;
+
+if (!mongoUri) {
+   console.error("❌ Missing MONGODB_URI in .env");
+   process.exit(1);
+}
 
 // establish connection
-
+mongoose.connect(mongoUri)
+   .then(() => console.log("✅ Connected to MongoDB"))
+   .catch((err) => console.error("❌ Connection error:", err));
 
 // define schema
+const studentSchema = new mongoose.Schema({
+   name: String,
+   age: Number,
+   major: String
+});
+const Student = mongoose.model("Student", studentSchema);
 
 
 // create document
