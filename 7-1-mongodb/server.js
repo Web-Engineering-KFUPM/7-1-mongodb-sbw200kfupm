@@ -188,7 +188,7 @@
 import mongoose from "mongoose";
 import "dotenv/config";
 
-const mongoUri = process.env.MONGODB_URI;
+const mongoUri = "mongodb+srv://sbw_db_user:12345@cluster0.ob3ttmo.mongodb.net/";
 
 if (!mongoUri) {
    console.error("❌ Missing MONGODB_URI in .env");
