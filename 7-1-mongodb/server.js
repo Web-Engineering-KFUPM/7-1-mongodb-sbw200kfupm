@@ -34,7 +34,7 @@
  *   - 3.2: choose IP access list from the left menu.
  *   - 3.3: edit IP address and set 0.0.0.0/0 and confirm it.
  *   Note: Take a screen shot of TODO 3.3 and save it in Mongo-Screen-shots/TODO-3
- *
+ *    
  * ============================================
  * TODO-4 Download and setup Monogsh (Do it if you dont have mongosh, otherwise skip this step)
  * ============================================
